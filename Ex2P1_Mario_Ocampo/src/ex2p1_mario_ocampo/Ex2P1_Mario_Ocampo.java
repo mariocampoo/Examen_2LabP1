@@ -21,21 +21,19 @@ public class Ex2P1_Mario_Ocampo {
         Scanner scanner = new Scanner(System.in);
         int opcion = 0;
 
-        while (opcion != 4) {
+        while (opcion != 3) {
             System.out.println("");
-            System.out.println("1) Formato");
-            System.out.println("2) Hang man game");
-            System.out.println("3) Calculadora Polaca");
-            System.out.println("4) Salir");
+            System.out.println("1) Hang man game");
+            System.out.println("2) Calculadora Polaca");
+            System.out.println("3) Salir");
             opcion = scanner.nextInt();
             System.out.println("");
-            if (opcion == 1) {
-
-            } else {
-                if (opcion == 2) {
+            
+                if (opcion == 1) {
                     Scanner sc = new Scanner(System.in);
                     int iniciar = 0;
                     ArrayList<String> palabrasA = new ArrayList();
+                    ArrayList<String> linea = new ArrayList();
 
                     palabrasA.add("Hola");
                     palabrasA.add("Programacion");
@@ -67,6 +65,7 @@ public class Ex2P1_Mario_Ocampo {
                                     System.out.println("comienze");
                                     String com=inte.nextLine();
                                 }
+                                
 
                             }
 
@@ -85,7 +84,7 @@ public class Ex2P1_Mario_Ocampo {
 
                     }
                 } else {
-                    if (opcion == 3) {
+                    if (opcion == 2) {
 
                         Scanner calcu = new Scanner(System.in);
                         System.out.print("Ingrese la expresion: ");
@@ -97,5 +96,5 @@ public class Ex2P1_Mario_Ocampo {
             }
         }
     }
-}
+
    

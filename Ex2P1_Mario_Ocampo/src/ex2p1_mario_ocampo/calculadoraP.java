@@ -42,14 +42,16 @@ public class calculadoraP {
         return Elementos;
     }
 
-    private static void numero(String elemento) {
+    private static boolean numero(String elemento) {
         try{
             double valor;
             valor = Double.parseDouble(elemento);
+            return true;
         }
         catch (NumberFormatException e){
             
         }
+         return false;
          
         
     }
